@@ -1,0 +1,1 @@
+Para abrir o jogo abrir o arquivo Menujs

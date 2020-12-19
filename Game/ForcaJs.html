@@ -4,6 +4,12 @@
     <title>Javascript</title>
     <meta charset="utf-8" />
     <style>
+      body{
+        background-image: url("Background 1.1.gif");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;}
+
       .letra {
         width: 30px;
         font-size: 30px;
@@ -19,42 +25,57 @@
         text-align: center;
         margin: 5px;
       }
-      dvdisplay {
-        display: block;
+
+      #conteiner{
+        position: absolute;
+        left: 40%;
+        top: 40%;
       }
+
+      #imgforca{
+      position: absolute;
+      left: 70%;
+      top: 32%;
+      }
+
+      #forcaimg{
+      height: 100%;
+      width: 100%;
+      }
+
       #dvForca {
         position: absolute;
         left: 150px;
       }
       #cabeca {
         position: absolute;
-        top: 48px;
-        left: 90px;
+        top: 236px;
+        left: 1114px;
       }
       #corpo {
         position: absolute;
-        top: 180px;
-        left: 105px;
+        top: 325px;
+        left: 1095px;
       }
       #bracoE {
         position: absolute;
-        top: 165px;
-        left: 60px;
+        top: 325px;
+        left: 1094px;
       }
       #bracoD {
         position: absolute;
-        top: 165px;
-        left: 168px;
+        top: 325px;
+        left: 1082px;
       }
       #pernaE {
         position: absolute;
-        top: 330px;
-        left: 60px;
+        top: 453px;
+        left: 1094px;
       }
       #pernaD {
         position: absolute;
-        top: 330px;
-        left: 160px;
+        top: 453px;
+        left: 1082px;
       }
     </style>
     <script>
@@ -187,48 +208,55 @@
     </script>
   </head>
   <body>
-    <div id="dvmenu" class="dvdisplay">
-      <button onclick="inicia()">Nova palavra</button>
-    </div>
-    <div id="dvplavra" class="dvdisplay">
-      <input type="text" id="letra0" class="letra" maxlength="1" />
-      <input type="text" id="letra1" class="letra" maxlength="1" />
-      <input type="text" id="letra2" class="letra" maxlength="1" />
-      <input type="text" id="letra3" class="letra" maxlength="1" />
-      <input type="text" id="letra4" class="letra" maxlength="1" />
-      <input type="text" id="letra5" class="letra" maxlength="1" />
-      <input type="text" id="letra6" class="letra" maxlength="1" />
-      <input type="text" id="letra7" class="letra" maxlength="1" />
-      <input type="text" id="letra8" class="letra" maxlength="1" />
-      <input type="text" id="letra9" class="letra" maxlength="1" />
-      <input type="text" id="letra10" class="letra" maxlength="1" />
-      <input type="text" id="letra11" class="letra" maxlength="1" />
-      <input type="text" id="letra12" class="letra" maxlength="1" />
-      <input type="text" id="letra13" class="letra" maxlength="1" />
-      <input type="text" id="letra14" class="letra" maxlength="1" />
-      <input type="text" id="letra15" class="letra" maxlength="1" />
-      <input type="text" id="letra16" class="letra" maxlength="1" />
-      <input type="text" id="letra17" class="letra" maxlength="1" />
-      <input type="text" id="letra18" class="letra" maxlength="1" />
-      <input type="text" id="letra19" class="letra" maxlength="1" />
-    </div>
-    <div id="dvjogador" class="dvdisplay">
-      <div id="controlesJogador">
-        <input type="text" id="letraJ" class="letraJ" maxlength="1" />
-        <button onclick="jogar()">jogar</button>
-        <button onclick="dica()">Dica</button>
-        <div id="dvmsg"></div>
-        <br />
-        <div id="dvletrasdigitadas">Letras Digitadas:</div>
+    <div id= "conteiner">
+      <div id="dvmenu" class="dvdisplay">
+        <button onclick="inicia()">Nova palavra</button>
       </div>
-      <div id="dvForca">
-        <img id="cabeca" src="cabeca1.png" />
-        <img id="corpo" src="corpo.png" />
-        <img id="bracoE" src="bracoE.png" />
-        <img id="bracoD" src="bracoD.png" />
-        <img id="pernaE" src="pernaE.png" />
-        <img id="pernaD" src="pernaD.png" />
+      <div id="dvplavra" class="dvdisplay">
+        <input type="text" id="letra0" class="letra" maxlength="1" />
+        <input type="text" id="letra1" class="letra" maxlength="1" />
+        <input type="text" id="letra2" class="letra" maxlength="1" />
+        <input type="text" id="letra3" class="letra" maxlength="1" />
+        <input type="text" id="letra4" class="letra" maxlength="1" />
+        <input type="text" id="letra5" class="letra" maxlength="1" />
+        <input type="text" id="letra6" class="letra" maxlength="1" />
+        <input type="text" id="letra7" class="letra" maxlength="1" />
+        <input type="text" id="letra8" class="letra" maxlength="1" />
+        <input type="text" id="letra9" class="letra" maxlength="1" />
+        <input type="text" id="letra10" class="letra" maxlength="1" />
+        <input type="text" id="letra11" class="letra" maxlength="1" />
+        <input type="text" id="letra12" class="letra" maxlength="1" />
+        <input type="text" id="letra13" class="letra" maxlength="1" />
+        <input type="text" id="letra14" class="letra" maxlength="1" />
+        <input type="text" id="letra15" class="letra" maxlength="1" />
+        <input type="text" id="letra16" class="letra" maxlength="1" />
+        <input type="text" id="letra17" class="letra" maxlength="1" />
+        <input type="text" id="letra18" class="letra" maxlength="1" />
+        <input type="text" id="letra19" class="letra" maxlength="1" />
+      </div>
+      <div id="dvjogador" class="dvdisplay">
+        <div id="controlesJogador">
+          <input type="text" id="letraJ" class="letraJ" maxlength="1" />
+          <button onclick="jogar()">jogar</button>
+          <button onclick="dica()">Dica</button>
+          <div id="dvmsg"></div>
+          <br />
+          <div id="dvletrasdigitadas">Letras Digitadas:</div>
+        </div>
       </div>
     </div>
+
+    <div id= "imgforca">
+      <img id= "forcaimg" src= "Forca 1.2.png">
+    </div>
+
+    <div id="dvForca">
+       <img id="cabeca" src="cabeca1.png" />
+       <img id="corpo" src="corpo.png" />
+       <img id="bracoE" src="bracoE.png" />
+       <img id="bracoD" src="bracoD.png" />
+       <img id="pernaE" src="pernaE.png" />
+       <img id="pernaD" src="pernaD.png" />
+     </div>
   </body>
 </html>
